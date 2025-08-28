@@ -2,6 +2,11 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        Person p = new Person("John", "Doe", 20);
+        System.out.println("First name: " + p.getFirstName());
+        System.out.println("Is teen? " + p.isTeen());
+
+        Wall w = new Wall(5, 4);
+        System.out.println("Wall area: " + w.getArea());
     }
 }
